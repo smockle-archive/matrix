@@ -8,7 +8,7 @@
 
 # matrix
 
-Multi dimensional matrices and matrix functions.
+Single or multi dimensional matrices and matrix functions.
 
 ## Installation
 
