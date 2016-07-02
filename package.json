@@ -1,7 +1,7 @@
 {
   "name": "@smockle/matrix",
   "version": "1.0.0",
-  "description": "Multi dimensional matrices and matrix functions.",
+  "description": "Single and multi dimensional matrices and matrix functions.",
   "main": "index.js",
   "scripts": {
     "docs": "jsdoc2md \"lib/**/*.js\" --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",

@@ -1,2 +1,2 @@
-const safe = require('./lib/safe')
-module.exports = safe
+const matrix = require('./lib/matrix')
+module.exports = matrix
