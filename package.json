@@ -1,0 +1,40 @@
+{
+  "name": "@smockle/matrix",
+  "version": "1.0.0",
+  "description": "Multi dimensional matrices and matrix functions.",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc2md \"lib/**/*.js\" --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
+    "test": "tape \"test/**/*.js\" && snyk test",
+    "coverage": "istanbul cover tape \"test/**/*.js\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smockle/matrix.git"
+  },
+  "author": "Clay Miller <clay@smockle.com> (https://smockle.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smockle/matrix/issues"
+  },
+  "homepage": "https://github.com/smockle/matrix#readme",
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.3.1",
+    "coveralls": "^2.11.9",
+    "eslint": "^3.0.0",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-plugin-promise": "^1.3.2",
+    "eslint-plugin-standard": "^1.3.2",
+    "istanbul": "^0.4.3",
+    "jsdoc-to-markdown": "^1.3.6",
+    "tape": "^4.5.1"
+  },
+  "snyk": true,
+  "dependencies": {
+    "lodash": "^4.11.2",
+    "mathjs": "^3.2.1",
+    "snyk": "^1.14.3"
+  }
+}
