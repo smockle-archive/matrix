@@ -3,7 +3,7 @@ const inspect = require('util').inspect
 const Matrix = require('../lib/matrix')
 
 test('Matrix', function (t) {
-  t.plan(59)
+  t.plan(60)
 
   // Matrix
   const error = new TypeError('Matrix must be a number or array of numbers')
@@ -85,6 +85,9 @@ test('Matrix', function (t) {
   t.deepEqual(Matrix(1).transpose(), Matrix(1), 'transpose number')
   t.deepEqual(Matrix([1, 2]).transpose(), Matrix([[1], [2]]), 'transpose number array')
   t.deepEqual(Matrix([[1, 2, 3], [4, 5, 6]]).transpose(), Matrix([[1, 4], [2, 5], [3, 6]]), 'transpose 2D number array')
+
+  // Matrix#invert
+  t.deepEqual(Matrix([[1, 2], [3, 4]]).invert(), Matrix([[-2, 1], [1.5, -0.5]]), 'invert 2D number array')
 
   // Matrix#map
   const matrix = Matrix([1, 2, 3])
