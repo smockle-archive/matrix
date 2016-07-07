@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '6'
-- 6.2.2
+- 6.3.0
 - '4'
 - 4.4.7
 notifications:
@@ -12,12 +12,12 @@ cache:
   directories:
   - node_modules
 before_install:
-- npm install -g npm@3.9.5
+- npm install -g npm@3.10.3
 after_script:
 - npm run coverage
 - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - "./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
-- snyk auth $SNYK_TOKEN && snyk monitor
+- snyk auth $SNYK_TOKEN && snyk monitor --org=smockle
 env:
   global:
   - secure: hrkVaZCenH331e4LEy8sygnqFv8FsQf17K5JJ565dF6XjbkgSbl23FPw99Fy3iD2/E2dndvpbP9/QQtkyyeOs1bkMr02tJ3OoPv2in64IVbNIgD0+eQPImCrhTn7ORu5vTaKJ7Ema3qDDmUZ6pnJbnCjeuykquFsELzU1Iip2d7g/dRmRWoILkzF7vdn0Bbm0WM/harQplbzL9b7O5dZIz7QC+wqOtCMPJEWZ0F8P5qFPnBYBk+xoPW95Ob2Lb0Pmt+WYnxpNHl8/Cwwa3O2E5oLjict9VZZ2l+pAJL5yk2Vz87fjrCrGv7GWtWwwLrYOvoZiDoSO93WPXydqlsnsExpx44Y/IORGgTcEsHCv/fFIVx/Z0A+8o68LQEIzYH3PaKIqay6nYLsFVE7j3wT+Xd3+GF1YRsB3BwltyepZwCeIW5NqB8tkBDJw4ROjbYHI8tXwoVEsatowmIeys8m/G9Q9kP8PQz9A9K/00mwCg/5RLQEUqXOjtsaMAJStjFhUewGqFmV6IrQZoEJTuCQiFkdTjvs5Uw/wzXqzOGe4vOH3EDtPg0Xpm5AK9hcN+WXGbaDRsf+9MYaQGAJz2uIzXbUHoBnyz19bxP8NW8yX2BIBjXqgD5Tu2jNcUNcRfott4fwE5H8tGODhYvc9UgQD1LwfKdRRkduWe9ILUM5Ous=

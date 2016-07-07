@@ -10,10 +10,10 @@ cache:
 
 # scripts that run after cloning repository
 install:
-  # Install node 6.2.2
-  - ps: Install-Product node 6.2
-  # Install npm 3.9.5
-  - npm install -g npm@3.9.5
+  # Install node 6.3.0
+  - ps: Install-Product node 6.3
+  # Install npm 3.10.3
+  - npm install -g npm@3.10.3
   # install modules
   - npm install
 
