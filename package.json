@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "docs": "jsdoc2md \"lib/**/*.js\" --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
-    "test": "tape \"test/**/*.js\" && snyk test",
+    "test": "npm run test:bash",
+    "test:bash": "tape \"test/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test",
+    "test:cmd": "tape \"test/**/*.js\" && snyk auth %SNYK_TOKEN% && snyk test",
     "coverage": "istanbul cover tape \"test/**/*.js\"",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
