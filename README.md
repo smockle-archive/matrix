@@ -5,10 +5,9 @@
 [![Test Coverage](https://codeclimate.com/github/smockle/matrix/badges/coverage.svg)](https://codeclimate.com/github/smockle/matrix/coverage)
 [![Coverage Status](https://coveralls.io/repos/github/smockle/matrix/badge.svg?branch=master)](https://coveralls.io/github/smockle/matrix?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@smockle/matrix/badge.svg)](https://snyk.io/test/npm/@smockle/matrix)
+[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
 
 # matrix
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
 
 Single or multi dimensional matrices and matrix functions.
 
