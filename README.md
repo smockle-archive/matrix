@@ -8,6 +8,8 @@
 
 # matrix
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
+
 Single or multi dimensional matrices and matrix functions.
 
 ## Installation
