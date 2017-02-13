@@ -39,6 +39,6 @@
   "dependencies": {
     "lodash": "^4.11.2",
     "mathjs": "^3.2.1",
-    "snyk": "^1.16.0"
+    "snyk": "^1.21.0"
   }
 }
