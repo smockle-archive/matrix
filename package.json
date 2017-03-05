@@ -25,7 +25,7 @@
   "homepage": "https://github.com/smockle/matrix#readme",
   "devDependencies": {
     "codeclimate-test-reporter": "^0.4.0",
-    "coveralls": "^2.11.9",
+    "coveralls": "2.11.16",
     "eslint": "^3.0.0",
     "eslint-config-standard": "^6.0.0",
     "eslint-plugin-promise": "^3.0.0",
