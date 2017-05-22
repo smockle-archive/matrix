@@ -38,7 +38,7 @@
     "istanbul": "^0.4.3",
     "jsdoc-to-markdown": "^3.0.0",
     "lint-staged": "^3.4.0",
-    "prettier-eslint-cli": "^4.0.0",
+    "prettier-eslint-cli": "^4.0.1",
     "tape": "^4.5.1"
   },
   "snyk": true,
