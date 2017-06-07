@@ -1,8 +1,6 @@
 [![npm](https://img.shields.io/npm/v/@smockle/matrix.svg)](https://www.npmjs.com/package/@smockle/matrix)
 [![Build Status](https://travis-ci.org/smockle/matrix.svg?branch=master)](https://travis-ci.org/smockle/matrix)
 [![Build status](https://ci.appveyor.com/api/projects/status/x1sjhd5q1jv1eupd?svg=true)](https://ci.appveyor.com/project/smockle/matrix)
-[![Code Climate](https://codeclimate.com/github/smockle/matrix/badges/gpa.svg)](https://codeclimate.com/github/smockle/matrix)
-[![Test Coverage](https://codeclimate.com/github/smockle/matrix/badges/coverage.svg)](https://codeclimate.com/github/smockle/matrix/coverage)
 [![Coverage Status](https://coveralls.io/repos/github/smockle/matrix/badge.svg?branch=master)](https://coveralls.io/github/smockle/matrix?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@smockle/matrix/badge.svg)](https://snyk.io/test/npm/@smockle/matrix)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
@@ -45,7 +43,7 @@ const m31 = Matrix([[1], [2], [3]])
             * [.transpose()](#module_matrix--Matrix+transpose) ⇒ <code>Matrix</code>
             * [.invert()](#module_matrix--Matrix+invert) ⇒ <code>Matrix</code>
             * [.map()](#module_matrix--Matrix+map) ⇒ <code>Matrix</code>
-            * [.valueOf()](#module_matrix--Matrix+valueOf) ⇒ <code>number</code> &#124; <code>Array.&lt;number&gt;</code>
+            * [.valueOf()](#module_matrix--Matrix+valueOf) ⇒ <code>number</code> \| <code>Array.&lt;number&gt;</code>
             * [.inspect()](#module_matrix--Matrix+inspect) ⇒ <code>string</code>
                 * [~padding](#module_matrix--Matrix+inspect..padding) : <code>string</code>
         * _static_
@@ -76,28 +74,28 @@ Creates a Matrix
 
 | Param | Type | Description |
 | --- | --- | --- |
-| x | <code>number</code> &#124; <code>Array.&lt;number&gt;</code> | Values to store in matrix |
+| x | <code>number</code> \| <code>Array.&lt;number&gt;</code> | Values to store in matrix |
 
 <a name="module_matrix--Matrix+countRows"></a>
 
 #### matrix.countRows() ⇒ <code>number</code>
 Counts rows in this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>number</code> - Number of rows  
 <a name="module_matrix--Matrix+countColumns"></a>
 
 #### matrix.countColumns() ⇒ <code>number</code>
 Counts columns in this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>number</code> - Number of columns  
 <a name="module_matrix--Matrix+addable"></a>
 
 #### matrix.addable(y) ⇒ <code>boolean</code>
 Determines whether this matrix can be summed
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>boolean</code> - Whether this matrix can be summed (using matrix addition)  
 
 | Param | Type | Description |
@@ -109,7 +107,7 @@ Determines whether this matrix can be summed
 #### matrix.add(y) ⇒ <code>Matrix</code>
 Adds this matrix using matrix addition
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - New matrix with the summation  
 
 | Param | Type | Description |
@@ -121,7 +119,7 @@ Adds this matrix using matrix addition
 #### matrix.multipliable(y) ⇒ <code>boolean</code>
 Determines whether this matrix can be multiplied
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>boolean</code> - Whether two matrices can be summed (using matrix multiplication)  
 
 | Param | Type | Description |
@@ -133,7 +131,7 @@ Determines whether this matrix can be multiplied
 #### matrix.multiply(y) ⇒ <code>Matrix</code>
 Calculates the dot product of this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - New matrix with the dot product  
 
 | Param | Type | Description |
@@ -145,48 +143,48 @@ Calculates the dot product of this matrix
 #### matrix.transpose() ⇒ <code>Matrix</code>
 Calculates the transpose of this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - New matrix with the transpose  
 <a name="module_matrix--Matrix+invert"></a>
 
 #### matrix.invert() ⇒ <code>Matrix</code>
 Inverts this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - Matrix inverse  
 <a name="module_matrix--Matrix+map"></a>
 
 #### matrix.map() ⇒ <code>Matrix</code>
 Maps over this matrix
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - Matrix inverse  
 <a name="module_matrix--Matrix+valueOf"></a>
 
-#### matrix.valueOf() ⇒ <code>number</code> &#124; <code>Array.&lt;number&gt;</code>
+#### matrix.valueOf() ⇒ <code>number</code> \| <code>Array.&lt;number&gt;</code>
 Returns the number or number array value
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
-**Returns**: <code>number</code> &#124; <code>Array.&lt;number&gt;</code> - Number of number array value  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
+**Returns**: <code>number</code> \| <code>Array.&lt;number&gt;</code> - Number of number array value  
 <a name="module_matrix--Matrix+inspect"></a>
 
 #### matrix.inspect() ⇒ <code>string</code>
 Formats and prints the matrix value
 
-**Kind**: instance method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: instance method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>string</code> - Formatted matrix value  
 <a name="module_matrix--Matrix+inspect..padding"></a>
 
 ##### inspect~padding : <code>string</code>
 Output array filled with zeroes
 
-**Kind**: inner constant of <code>[inspect](#module_matrix--Matrix+inspect)</code>  
+**Kind**: inner constant of [<code>inspect</code>](#module_matrix--Matrix+inspect)  
 <a name="module_matrix--Matrix.addable"></a>
 
 #### Matrix.addable(x, y) ⇒ <code>boolean</code>
 Determines whether two matrices can be summed
 
-**Kind**: static method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: static method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>boolean</code> - Whether two matrices can be summed (using matrix addition)  
 
 | Param | Type | Description |
@@ -199,7 +197,7 @@ Determines whether two matrices can be summed
 #### Matrix.add(x, y) ⇒ <code>Matrix</code>
 Adds two matrices using matrix addition
 
-**Kind**: static method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: static method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - New matrix with the summation  
 **Throws**:
 
@@ -216,7 +214,7 @@ Adds two matrices using matrix addition
 #### Matrix.multipliable(x, y) ⇒ <code>boolean</code>
 Determines whether two matrices can be multiplied
 
-**Kind**: static method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: static method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>boolean</code> - Whether two matrices can be summed (using matrix multiplication)  
 
 | Param | Type | Description |
@@ -229,7 +227,7 @@ Determines whether two matrices can be multiplied
 #### Matrix.multiply(x, y) ⇒ <code>Matrix</code>
 Calculates the dot product of two matrices
 
-**Kind**: static method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: static method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - New matrix with the dot product  
 
 | Param | Type | Description |
@@ -242,13 +240,13 @@ Calculates the dot product of two matrices
 ##### multiply~z : <code>Matrix</code>
 New matrix with the dot product
 
-**Kind**: inner constant of <code>[multiply](#module_matrix--Matrix.multiply)</code>  
+**Kind**: inner constant of [<code>multiply</code>](#module_matrix--Matrix.multiply)  
 <a name="module_matrix--Matrix.invert"></a>
 
 #### Matrix.invert(Matrix) ⇒ <code>Matrix</code>
 Inverts a matrix
 
-**Kind**: static method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: static method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>Matrix</code> - Matrix inverse  
 
 | Param | Type | Description |
@@ -260,13 +258,13 @@ Inverts a matrix
 #### Matrix~matrix : <code>Matrix</code>
 Single or multi dimensional matrix
 
-**Kind**: inner constant of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: inner constant of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 <a name="module_matrix--Matrix..innerproduct"></a>
 
 #### Matrix~innerproduct(x, y, i) ⇒ <code>number</code>
 Calculates the inner product of two matrices
 
-**Kind**: inner method of <code>[Matrix](#exp_module_matrix--Matrix)</code>  
+**Kind**: inner method of [<code>Matrix</code>](#exp_module_matrix--Matrix)  
 **Returns**: <code>number</code> - Inner product of matrices  
 
 | Param | Type | Description |

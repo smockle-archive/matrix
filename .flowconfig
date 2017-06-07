@@ -25,4 +25,4 @@ suppress_comment= \\(.\\|\n\\)*\\$FixMe
 suppress_comment= \\(.\\|\n\\)*\\$flow_disable_line
 
 [version]
-^0.27.0
+^0.47.0

@@ -2,16 +2,12 @@
   "name": "@smockle/matrix",
   "version": "1.0.2",
   "description": "Single and multi dimensional matrices and matrix functions.",
-  "main": "index.js",
+  "main": "lib/matrix.js",
   "scripts": {
-    "docs": "jsdoc2md \"lib/**/*.js\" --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
-    "test": "npm run test:bash",
-    "test:bash": "tape \"test/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test",
-    "test:cmd": "tape \"test/**/*.js\" && snyk auth %SNYK_TOKEN% && snyk test",
-    "coverage": "istanbul cover tape \"test/**/*.js\"",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect",
-    "postpublish": "greenkeeper-postpublish",
+    "docs": "jsdoc2md lib/matrix.js --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
+    "test": "nyc node test/matrix.js | colortape",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "prepublish": "npm test",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -25,7 +21,7 @@
   },
   "homepage": "https://github.com/smockle/matrix#readme",
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.5.0",
+    "colortape": "^0.1.2",
     "coveralls": "^2.11.9",
     "eslint": "^3.18.0",
     "eslint-config-standard": "^10.0.0",
@@ -33,15 +29,12 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.0",
-    "greenkeeper-postpublish": "^1.0.0",
     "husky": "^0.13.2",
-    "istanbul": "^0.4.3",
     "jsdoc-to-markdown": "^3.0.0",
     "lint-staged": "^3.4.0",
-    "prettier-eslint-cli": "^4.0.0",
-    "tape": "^4.5.1"
+    "nyc": "^11.0.2",
+    "prettier-eslint-cli": "^4.0.0"
   },
-  "snyk": true,
   "lint-staged": {
     "*.js": [
       "./node_modules/.bin/prettier-eslint --write",
@@ -49,8 +42,7 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.11.2",
-    "mathjs": "^3.2.1",
-    "snyk": "^1.30.2"
+    "lodash": "^4.17.4",
+    "mathjs": "^3.13.3"
   }
 }

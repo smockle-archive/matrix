@@ -9,10 +9,8 @@ environment:
 
 # scripts that run after cloning repository
 install:
-  # Install node 7
-  - ps: Install-Product node 7
-  # Install npm 4
-  - npm install -g npm@4
+  # Install node 8
+  - ps: Install-Product node 8
   # install modules
   - npm install
 
