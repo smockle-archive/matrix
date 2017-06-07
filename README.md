@@ -1,7 +1,8 @@
 [![npm](https://img.shields.io/npm/v/@smockle/matrix.svg)](https://www.npmjs.com/package/@smockle/matrix)
 [![Build Status](https://travis-ci.org/smockle/matrix.svg?branch=master)](https://travis-ci.org/smockle/matrix)
 [![Build status](https://ci.appveyor.com/api/projects/status/x1sjhd5q1jv1eupd?svg=true)](https://ci.appveyor.com/project/smockle/matrix)
-[![Coverage Status](https://coveralls.io/repos/github/smockle/matrix/badge.svg?branch=master)](https://coveralls.io/github/smockle/matrix?branch=master)
+[![Code Climate](https://codeclimate.com/github/smockle/matrix/badges/gpa.svg)](https://codeclimate.com/github/smockle/matrix)
+[![Test Coverage](https://codeclimate.com/github/smockle/matrix/badges/coverage.svg)](https://codeclimate.com/github/smockle/matrix/coverage)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@smockle/matrix/badge.svg)](https://snyk.io/test/npm/@smockle/matrix)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
 
