@@ -20,7 +20,7 @@ test_script:
   - node --version
   - npm --version
   # run tests
-  - npm run test:cmd
+  - npm test
 
 # Don't build with msbuild.
 build: off
