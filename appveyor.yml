@@ -2,11 +2,6 @@
 init:
   - git config --global core.autocrlf input
 
-# environment variables
-environment:
-  SNYK_TOKEN:
-    secure: Bq1MJN1u1Vjv2RWMDHsFYiNHe1n36Kn/G1gxB9l92TckT1m58Is6VjEV2EK+L/iC
-
 # scripts that run after cloning repository
 install:
   # Install node 8
