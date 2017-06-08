@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/x1sjhd5q1jv1eupd?svg=true)](https://ci.appveyor.com/project/smockle/matrix)
 [![Code Climate](https://codeclimate.com/github/smockle/matrix/badges/gpa.svg)](https://codeclimate.com/github/smockle/matrix)
 [![Test Coverage](https://codeclimate.com/github/smockle/matrix/badges/coverage.svg)](https://codeclimate.com/github/smockle/matrix/coverage)
-[![Known Vulnerabilities](https://snyk.io/test/npm/@smockle/matrix/badge.svg)](https://snyk.io/test/npm/@smockle/matrix)
+[![Known Vulnerabilities](https://snyk.io/test/github/smockle/matrix/badge.svg)](https://snyk.io/test/github/smockle/matrix)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smockle/matrix.svg)](https://greenkeeper.io/)
 
 # matrix
