@@ -8,7 +8,6 @@
     "test": "node test/matrix.js | colortape",
     "coverage": "nyc --reporter=lcov node test/matrix.js | colortape",
     "postcoverage": "nyc report",
-    "codeclimate": "codeclimate-test-reporter < ./coverage/lcov.info",
     "prepublish": "npm test",
     "precommit": "lint-staged"
   },
@@ -23,7 +22,7 @@
   },
   "homepage": "https://github.com/smockle/matrix#readme",
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.5.0",
+    "codecov": "^2.2.0",
     "colortape": "^0.1.2",
     "eslint": "^3.18.0",
     "eslint-config-standard": "^10.0.0",
