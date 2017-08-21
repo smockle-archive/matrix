@@ -2,11 +2,11 @@
   "name": "@smockle/matrix",
   "version": "2.0.0",
   "description": "Single and multi dimensional matrices and matrix functions.",
-  "main": "lib/matrix.js",
+  "main": "lib/matrix",
   "scripts": {
-    "docs": "jsdoc2md lib/matrix.js --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
-    "test": "node test/matrix.js | colortape",
-    "coverage": "nyc --reporter=lcov node test/matrix.js | colortape",
+    "docs": "jsdoc2md lib/matrix.mjs --configure jsdoc.json --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
+    "test": "node -r @std/esm test/matrix.mjs | colortape",
+    "coverage": "nyc --reporter=lcov node -r @std/esm test/matrix.mjs | colortape",
     "postcoverage": "nyc report",
     "prepublish": "npm test",
     "precommit": "lint-staged"
@@ -37,12 +37,13 @@
     "prettier-eslint-cli": "^4.0.0"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,mjs}": [
       "./node_modules/.bin/prettier-eslint --write",
       "git add"
     ]
   },
   "dependencies": {
+    "@std/esm": "^0.5.1",
     "lodash": "^4.17.4",
     "mathjs": "^3.13.3"
   }

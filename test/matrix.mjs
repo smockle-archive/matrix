@@ -1,6 +1,7 @@
-const test = require('tape')
-const inspect = require('util').inspect
-const Matrix = require('../lib/matrix')
+import Matrix from '../lib/matrix'
+import test from 'tape'
+import util from 'util'
+const { inspect } = util
 
 test('Matrix', function (t) {
   t.plan(60)
