@@ -1,3 +1,5 @@
+// @flow
+
 import Matrix from '../lib/matrix'
 import test from 'tape'
 import util from 'util'

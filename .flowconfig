@@ -5,24 +5,23 @@
 [libs]
 
 [options]
-module.system=haste
+# Run Flow on .js, .mjs, .jsx, .json files
+module.file_ext=.js
+module.file_ext=.mjs
+module.file_ext=.jsx
+module.file_ext=.json
 
+# Use the Node.js module system to resolve `import` and `require`
+module.system=node
+
+# Allow static class fields
 esproposal.class_static_fields=enable
+
+# Allow instance class fields
 esproposal.class_instance_fields=enable
 
-experimental.strict_type_args=true
+# Treat underscore-prefixed class properties and methods as private
+munge_underscores=true
 
-munge_underscores=false
-
-suppress_type=$FlowIssue
-suppress_type=$FlowFixMe
-suppress_type=$FixMe
-suppress_type=$flow_disable_line
-
-suppress_comment= \\(.\\|\n\\)*\\$FlowIssue
-suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
-suppress_comment= \\(.\\|\n\\)*\\$FixMe
-suppress_comment= \\(.\\|\n\\)*\\$flow_disable_line
-
-[version]
-^0.47.0
+# Ignore next line with /* @flow disable */ magic comment
+suppress_comment= \\(.\\|\n\\)*\\@flow disable
