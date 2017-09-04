@@ -5,11 +5,13 @@
   "main": "lib/matrix",
   "scripts": {
     "debug": "node --nolazy --inspect-brk=5858 -r @std/esm test/matrix.mjs",
-    "docs": "jsdoc2md lib/matrix.mjs --configure jsdoc.json --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
+    "docs":
+      "jsdoc2md lib/matrix.mjs --configure jsdoc.json --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
     "test": "node -r @std/esm test/matrix.mjs | colortape",
-    "coverage": "nyc --require @std/esm --extension .mjs --reporter=lcov node test/matrix.mjs | colortape",
+    "coverage":
+      "nyc --require @std/esm --extension .mjs --reporter=lcov node test/matrix.mjs | colortape",
     "postcoverage": "nyc report",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -39,10 +41,7 @@
     "prettier-eslint-cli": "^4.0.0"
   },
   "lint-staged": {
-    "*.{js,mjs}": [
-      "./node_modules/.bin/prettier-eslint --write",
-      "git add"
-    ]
+    "*.{js,mjs}": ["./node_modules/.bin/prettier-eslint --write", "git add"]
   },
   "@std/esm": {
     "cjs": true
