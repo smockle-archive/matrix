@@ -2,7 +2,8 @@
   "name": "@smockle/matrix",
   "version": "3.0.3",
   "description": "Single and multi dimensional matrices and matrix functions.",
-  "main": "lib/matrix",
+  "main": "lib/matrix.js",
+  "module": "lib/matrix.mjs",
   "scripts": {
     "debug": "node --nolazy --inspect-brk=5858 -r @std/esm test/matrix.mjs",
     "docs": "jsdoc2md lib/matrix.mjs --configure jsdoc.json --template jsdoc2md/README.hbs --example-lang JavaScript > README.md",
