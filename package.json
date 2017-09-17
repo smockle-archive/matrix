@@ -49,7 +49,7 @@
     "cjs": true
   },
   "dependencies": {
-    "@std/esm": "^0.9.0",
+    "@std/esm": "^0.10.0",
     "flow-typed": "^2.1.5",
     "lodash": "^4.17.4",
     "mathjs": "^3.13.3"
