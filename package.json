@@ -32,7 +32,7 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.0",
-    "flow-bin": "^0.59.0",
+    "flow-bin": "^0.60.0",
     "husky": "^0.14.0",
     "jsdoc-to-markdown": "^3.0.0",
     "lint-staged": "^5.0.0",
